@@ -7,9 +7,20 @@
     list-style-type: none;
     font-family: 'Jost', sans-serif;
     font-weight: 400;
+    /*background-image: url("../images/bg.jpg");*/
 }
 html{
     font-size: 62.5%;
+}
+.section-heading{
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: 0.3rem solid #333;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+
 }
 .center{
     display: flex;
@@ -38,7 +49,7 @@ padding: 0 3rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
     /*border-bottom: 3rem solid #fff;*/
-    text-shadow: .2rem 2rem 1rem  #555;
+    text-shadow: 0.2rem 2rem 1rem  #555;
     transform: skew(-10deg);
 }
 
@@ -47,9 +58,9 @@ padding: 0 3rem;
     height:25rem;
     object-fit: cover;
     border-radius: 50%;
-    border: .7rem dotted #e41c6f;
+    border: 0.7rem dotted #e41c6f;
 background-color: rgba(255,255,255,0.7);
-    padding:.5rem ;
+    padding: 0.5rem ;
     opacity: 0.9;
 }
 
@@ -58,8 +69,8 @@ background-color: rgba(255,255,255,0.7);
     color: white;
     background-color: #e41c6f;
     margin: 5rem 0;
-    padding: .5rem 3rem;
-    letter-spacing: .3rem;
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
     transform: skew(-10deg);
 }
 
@@ -68,8 +79,8 @@ background-color: rgba(255,255,255,0.7);
     font-weight: 700;
     color: #333;
     background-color: white;
-    border: .3rem solid #333;
-    padding: .5rem 1rem;
+    border: 0.3rem solid #333;
+    padding: 0.5rem 1rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
@@ -77,13 +88,13 @@ background-color: rgba(255,255,255,0.7);
     width: 100%;
     height: 4rem;
     background-color: #e41c6f;
-    box-shadow: .2rem .2rem .2rem 5rem #555;
+    box-shadow: 0.2rem 0.2rem 0.2rem 5rem #555;
 }
 .navbar-link{
     font-size: 1.7rem;
     font-weight: 600;
     color: #333333;
-    margin: 0.3rem;
+    margin: 3rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     position: relative;
@@ -117,19 +128,9 @@ color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-image: url("../images/bg.jpg");
 }
 
-.section-2-heading{
-    font-size: 5rem;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    margin-bottom: 15rem;
-    border-bottom: .3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.5rem #555;
-
-}
 
 .progress-bars-wrapper{
     margin-bottom: 10rem;
@@ -142,7 +143,7 @@ color: white;
     background-color: white;
     margin: 1.5rem 0;
     border-radius: 3rem;
-    box-shadow: .2rem .2rem 1rem #555;
+    box-shadow: 0.2rem 0.2rem 1rem #555;
     position: relative;
 }
 .progress-text{
@@ -182,7 +183,7 @@ color: white;
     font-size: 10rem;
     color: cornflowerblue;
     margin-bottom: 2rem;
-    text-shadow: .1rem .1rem .5rem #555 ;
+    text-shadow: 0.1rem 0.1rem 0.5rem #555 ;
 }
 
 .service h2{
@@ -192,5 +193,89 @@ color: white;
     width: 25rem;
     letter-spacing: .3rem;
     transform: skew(-10deg);
-    box-shadow: .2rem .2rem .5rem #555;
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
+
+/* Section 3 */
+.section-3 {
+    width: 100%;
+    height:100%;
+    padding: 10rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.projects-wrapper{
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.project:hover{
+    box-shadow: 1rem 1rem 1rem  #777777;
+}
+
+.project-text{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: -10rem;
+    transition: top 0.3s;
+    z-index: 10 ;
+}
+.project:hover .project-text{
+    top: 5rem;
+    transition: top 0.3s 0.3s;
+}
+
+.project-name {
+    font-size:  3rem;
+    font-weight: 700;
+    color: #333333;
+    text-transform: capitalize;
+}
+.project-technologies{
+    font-size: 1.8rem;
+    color: #ff514d;
+}
+.project-img{
+    width: 40rem;
+    transition: opacity 0.3s;
+}
+
+.project:hover .project-img{
+    opacity: 0.2;
+}
+
+.project-link{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333333;
+    letter-spacing: 0.1rem;
+    border: 0.3rem solid #ff514d;
+    padding: 0 1rem;
+    background-color: white;
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom 0.3s;
+}
+.project:hover .project-link{
+    bottom: 5rem;
+    transition: bottom 0.3s  0.3s;
+}
+
+/* end of section 3 */
