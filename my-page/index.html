@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="container">
-<section class="section-1 center">
+<section class="section-1 center" id="section-1">
 
 
 <h1 class="section-1-heading">
@@ -24,48 +24,48 @@
 </h1>
 <img src="../images/my-img.jpg" alt="Błażej Porwoł" class="person-img"/>
 <h3 class="person-name">Błażej Porwoł</h3>
-<a href="#" class="section-1-btn">Projects</a>
+<a href="#section-3" class="section-1-btn">Projects</a>
 
 </section>
 
     <nav class="navbar center">
-        <a href="#" class="navbar-link">Home</a>
-        <a href="#" class="navbar-link">About</a>
-        <a href="#" class="navbar-link">Portfolio</a>
-        <a href="#" class="navbar-link">Contact</a>
+        <a href="#section-1" class="navbar-link">Home</a>
+        <a href="#section-2" class="navbar-link">About</a>
+        <a href="#section-3" class="navbar-link">Portfolio</a>
+        <a href="#section-4" class="navbar-link">Contact</a>
     </nav>
 
-<section class="section-2">
+<section class="section-2" id="section-2">
     <h1 class="section-heading">About Me</h1>
     <div class="progress-bars-wrapper">
         <div class="progress-bar">
             <p class="progress-text">HTML
-            <span>70</span>%</p>
+            <span></span>%</p>
             <div class="progress-percent"></div>
         </div>
         <div class="progress-bar">
             <p class="progress-text">CSS
-                <span>70</span>%</p>
+                <span></span>%</p>
             <div class="progress-percent"></div>
         </div>
         <div class="progress-bar">
             <p class="progress-text">JavaScript
-                <span>40</span>%</p>
+                <span></span>%</p>
             <div class="progress-percent"></div>
         </div>
         <div class="progress-bar">
             <p class="progress-text">Angular
-                <span>20</span>%</p>
+                <span></span>%</p>
             <div class="progress-percent"></div>
         </div>
         <div class="progress-bar">
             <p class="progress-text">React
-                <span>10</span>%</p>
+                <span></span>%</p>
             <div class="progress-percent"></div>
         </div>
         <div class="progress-bar">
             <p class="progress-text">Jest
-                <span>20</span>%</p>
+                <span></span>%</p>
             <div class="progress-percent"></div>
         </div>
     </div>
@@ -94,7 +94,7 @@
 </section>
 
     <!-- Section 3 -->
-    <section class="section-3">
+    <section class="section-3" id="section-3">
         <h1 class="section-heading">My Projects</h1>
         <div class="projects-wrapper">
             <div class="project">
@@ -102,21 +102,21 @@
                     <h2 class="project-name">My Portfolio</h2>
                     <h4 class="project-technologies">HTML/ CSS/ JS</h4>
                 </div>
-                <img src="../images/my-portfolio-wbs.jpg" class="project-img">
+                <img src="../images/my-portfolio-wbs.jpg" alt="My Portfolio" class="project-img">
             </div>
             <div class="project">
                 <div class="project-text">
                     <h2 class="project-name">Typing Game</h2>
                     <h4 class="project-technologies">HTML/ CSS/ JS</h4>
                 </div>
-                <img src="../images/typing-game.png" class="project-img">
+                <img src="../images/typing-game.png" alt="Typing Game" class="project-img">
             </div>
             <div class="project">
                 <div class="project-text">
                     <h2 class="project-name">Recipe APP</h2>
                     <h4 class="project-technologies">Typescript / Angular</h4>
                 </div>
-                <img src="../images/Anguar-App.jpg" class="project-img">
+                <img src="../images/Anguar-App.jpg" alt="Recipe App" class="project-img">
             </div>
         </div>
     </section>
@@ -125,27 +125,33 @@
 
     <!-- Start Section 4 -->
 
-    <section class="section-4">
+    <section class="section-4" id="section-4">
         <h1 class="section-heading seaction-4-heading">Contact Me</h1>
         <form class="contact-form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
+            <label>
+                <input type="text" placeholder="Name">
+            </label>
+            <label>
+                <input type="email" placeholder="Email">
+            </label>
+            <label>
+                <textarea placeholder="Message"></textarea>
+            </label>
             <input type="submit" value="Submit" class="contact-form-btn">
         </form>
     </section>
     <!-- End Section 4 -->
 
     <!-- Start Section 5 -->
-    <footer class="section-5">
+    <footer class="section-5 center " id="section-5">
         <div class="social-media">
-            <a href="#" class="social-media-link">
+            <a href="my/page" class="social-media-link">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="#" class="social-media-link">
+            <a href="my/page" class="social-media-link">
                 <i class="fab fa-github-square"></i>
             </a>
-            <a href="#" class="social-media-link">
+            <a href="my/page" class="social-media-link">
                 <i class="fab fa-facebook-square"></i>
             </a>
         </div>
@@ -153,8 +159,8 @@
             Copyright &copy; SlorenisBP All Rights Reserved
         </p>
     </footer>
-
     <!-- End Section 5 -->
+
 </div>
 
 <script src="script.js"></script>
