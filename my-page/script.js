@@ -20,24 +20,33 @@ const progressBarPercents =[60,50,40,30,20,20];
 
 
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= navbar.offsetTop) {
+mainFn();
+});
+const mainFn = () => {    if (window.pageYOffset >= navbar.offsetTop) {
 
-        navbar.classList.add('sticky')
-    } else {
-        navbar.classList.remove('sticky');
-    }
+    navbar.classList.add('sticky')
+} else {
+    navbar.classList.remove('sticky');
+}
     sections.forEach((section, i )=> {
         if (window.pageYOffset >= section.offsetTop -10){
             navbarLinks.forEach(navbarLink => {
                 navbarLink.classList.remove('change');
             });
-        navbarLinks[i].classList.add("change");
+            navbarLinks[i].classList.add("change");
         }
     });
 
     if (window.pageYOffset + window.innerHeight >= progress.offsetTop){
-    document.querySelectorAll(".progress-percent").forEach((el,i) => {
-        el.style.width = `${progressBarPercents[i]}%`;
-    })
+        document.querySelectorAll(".progress-percent").forEach((el,i) => {
+            el.style.width = `${progressBarPercents[i]}%`;
+            el.previousElementSibling.firstElementChild.textContent = progressBarPercents[i];
+        });
     }
-});
+}
+mainFn();
+
+// window.addEventListener('resize', () => {
+//     window.location.reload();
+// });
+
